@@ -1,0 +1,30 @@
+#output {
+  width: 100%;
+  height: 224px;
+  border-radius: 25px 25px 0px 0px;
+  background-color: #2a2e37;
+}
+
+#equation-display {
+  height: 60%;
+  padding-right: 25px;
+  color: #abafb8;
+  font-size: 24px;
+  font-weight: 300;
+
+  display: flex;
+  justify-content: right;
+  align-items:end;
+}
+
+#output-display {
+  height: 40%;
+  padding-right: 25px;
+  color: #b8bbc2;
+  font-size: 70px;
+  font-weight: 300;
+
+  display: flex;
+  justify-content: right;
+  align-items:end;
+}
