@@ -22,4 +22,5 @@ main {
   padding: 5px;
   border-radius: 25px;
   background-color: white;
+  overflow: hidden;
 }

@@ -3,4 +3,88 @@
   height: 64.8%;
   border-radius: 0px 0px 25px 25px;
   background-color: #2a2e37;
+
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  overflow: hidden;
+}
+
+#keys {
+  flex: 3;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 3px;
+  row-gap: 3px;
+}
+
+.special-key {
+  font-size: 40px;
+  font-weight: 300;
+  color: #c35bdb;
+  background-color: #2f3646;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.special-key.text-key {
+  font-size: 25px;
+}
+
+.special-key:hover {
+  background-color: #3b4457;
+}
+
+.key {
+  font-size: 40px;
+  font-weight: 300;
+  color: #ffffff;
+  background-color: #2f3646;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.key:hover {
+  background-color: #3b4457;
+}
+
+#buttons {
+  flex: 1;
+  margin-left: 3px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 2.034fr;
+  row-gap: 3px;
+}
+
+.special-button {
+  font-size: 40px;
+  font-weight: 300;
+  color: #ffffff;
+  background-color: #c45bdc;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.special-button img {
+  width: 40px;
+  height: auto;
+}
+
+.special-button:hover {
+  background-color: #d66ded;
 }
