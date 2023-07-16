@@ -20,7 +20,7 @@
 }
 
 .special-key {
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 300;
   color: #c35bdb;
   background-color: #2f3646;
@@ -33,15 +33,19 @@
 }
 
 .special-key.text-key {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .special-key:hover {
   background-color: #3b4457;
 }
 
+.special-key:active {
+  opacity: 0.7;
+}
+
 .key {
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 300;
   color: #ffffff;
   background-color: #2f3646;
@@ -57,9 +61,13 @@
   background-color: #3b4457;
 }
 
+.key:active {
+  opacity: 0.7;
+}
+
 #buttons {
   flex: 1;
-  margin-left: 3px;
+  margin-left: 4px;
 
   display: grid;
   grid-template-columns: 1fr;
@@ -69,7 +77,7 @@
 
 .special-button {
   font-size: 40px;
-  font-weight: 300;
+  font-weight: 200;
   color: #ffffff;
   background-color: #c45bdc;
 
@@ -87,4 +95,8 @@
 
 .special-button:hover {
   background-color: #d66ded;
+}
+
+.special-button:active {
+  opacity: 0.7;
 }
