@@ -21,35 +21,37 @@
   <body>
     <main>
       <section id="output">
-        <div id="equation-display">13 x 50</div>
-        <div id="output-display">650</div>
+        <div id="equation-display" class="js-equation-display"></div>
+        <div id="output-display" class="js-output-display"></div>
       </section>
       <section id="keypad">
         <div id="keys">
-          <div class="special-key text-key">AC</div>
-          <div class="special-key">&divide</div>
-          <div class="special-key">&times</div>
+          <div class="special-key text-key js-special-key" data-value="clear">AC</div>
+          <div class="special-key js-special-key" data-value="/">&divide</div>
+          <div class="special-key js-special-key" data-value="*">&times</div>
 
-          <div class="key" value="1">7</div>
-          <div class="key">8</div>
-          <div class="key">9</div>
-          <div class="key">4</div>
-          <div class="key">5</div>
-          <div class="key">6</div>
-          <div class="key">1</div>
-          <div class="key">2</div>
-          <div class="key">3</div>
-          <div class="key">.</div>
-          <div class="key">0</div>
-          <div class="key">%</div>
+          <div class="key js-key" data-value="7">7</div>
+          <div class="key js-key" data-value="8">8</div>
+          <div class="key js-key" data-value="9">9</div>
+          <div class="key js-key" data-value="4">4</div>
+          <div class="key js-key" data-value="5">5</div>
+          <div class="key js-key" data-value="6">6</div>
+          <div class="key js-key" data-value="1">1</div>
+          <div class="key js-key" data-value="2">2</div>
+          <div class="key js-key" data-value="3">3</div>
+          <div class="key js-special-key" data-value=".">.</div>
+          <div class="key js-key" data-value="0">0</div>
+          <div class="key js-special-key" data-value="%">%</div>
         </div>
         <div id="buttons">
-          <div class="special-button"><img src="images/back-icon.svg" alt="" /></div>
-          <div class="special-button">-</div>
-          <div class="special-button">+</div>
-          <div class="special-button">=</div>
+          <div class="special-button js-special-key" data-value="back"><img src="images/back-icon.svg" alt="" /></div>
+          <div class="special-button js-special-key" data-value="-">-</div>
+          <div class="special-button js-special-key" data-value="+">+</div>
+          <div class="special-button js-special-key" data-value="calculate">=</div>
         </div>
       </section>
     </main>
+
+    <script src="javascripts/app.js"></script>
   </body>
 </html>
